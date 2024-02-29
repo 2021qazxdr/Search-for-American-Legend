@@ -1,107 +1,102 @@
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>当代美国流传的神话及传说</title>  
-    <style>  
-        body {  
-            margin: 0;  
-            padding: 0;  
-            font-family: Arial, sans-serif;  
-        }  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>当代美国流传的神话及传说</title>  
+<style>  
+  body {  
+    margin: 0;  
+    padding: 0;  
+    font-family: Arial, sans-serif;  
+    background-color: #00008B; /* Blue background */  
+    color: #FFFFFF; /* White text */  
+    text-align: center;  
+  }  
   
-        .green-border {  
-            border: 5px solid green;  
-            padding: 20px;  
-        }  
+  .green-vine-border {  
+    border: 5px solid green;  
+    padding: 20px;  
+    margin: 20px;  
+  }  
   
-        .big-title {  
-            text-align: center;  
-            color: blue;  
-            font-size: 24px;  
-            margin-bottom: 20px;  
-        }  
+  h1, h2, p {  
+    margin: 0;  
+  }  
   
-        .small-title {  
-            display: inline-block;  
-            padding: 10px 20px;  
-            background-color: blue;  
-            color: white;  
-            font-weight: bold;  
-            font-size: 18px;  
-            border-radius: 10px;  
-            margin-right: 10px;  
-            text-decoration: none;  
-        }  
+  h1 {  
+    font-size: 36px;  
+  }  
   
-        .search-page {  
-            display: flex;  
-            justify-content: center;  
-            align-items: center;  
-            height: 100vh;  
-        }  
+  h2 {  
+    font-size: 24px;  
+    margin-bottom: 10px;  
+  }  
   
-        .search-box {  
-            width: 300px;  
-            padding: 10px;  
-        }  
+  .search-box {  
+    margin: 20px 0;  
+    padding: 10px;  
+    border: 1px solid #666;  
+    border-radius: 5px;  
+    width: 50%;  
+  }  
   
-        .result {  
-            border: 2px solid red;  
-            padding: 10px;  
-            margin-top: 10px;  
-        }  
+  .term-list {  
+    list-style-type: none;  
+    padding: 0;  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-around;  
+  }  
   
-        .red-border {  
-            border: 2px solid red;  
-            padding: 10px;  
-            margin-top: 20px;  
-        }  
+  .term-list li {  
+    margin: 10px 0;  
+  }  
   
-        .term {  
-            display: inline-block;  
-            width: 150px;  
-            margin-right: 10px;  
-            font-weight: bold;  
-            white-space: nowrap;  
-        }  
+  .term-list a {  
+    color: #FFFFFF;  
+    text-decoration: none;  
+  }  
   
-        .term:before {  
-            content: "• ";  
-        }  
-    </style>  
+  .example-text {  
+    margin-bottom: 20px;  
+  }  
+  
+  @media screen and (max-width: 600px) {  
+    .term-list {  
+      flex-direction: column;  
+    }  
+  }  
+</style>  
 </head>  
 <body>  
-    <div class="green-border">  
-        <h1 class="big-title">△走进奇幻美国△</h1>  
-        <div>  
-            <a href="#" class="small-title" onclick="openPage('american_gods')">《美国众神》相关</a>  
-            <a href="#" class="small-title" onclick="openPage('nordic_gods')">《北欧众神》相关</a>  
-            <a href="#" class="small-title" onclick="openPage('native_myths')">美国本土神话</a>  
-            <a href="#" class="small-title" onclick="openPage('foreign_myths')">美国外来神话</a>  
-            <a href="#" class="small-title" onclick="openPage('political_myths')">近现代政治神话</a>  
-            <a href="#" class="small-title" onclick="openPage('popular_ip')">热门IP相关</a>  
-        </div>  
-        <div class="red-border">  
-            <div class="term"><a href="#">《美国众神》相关</a></div>  
-            <div class="term">北欧神话</div>  
-            <div class="term">印度神话</div>  
-            <div class="term">希腊神话</div>  
-            <div class="term">罗马神话</div>  
-            <div class="term">爱尔兰传说</div>  
-            <div class="term">阿兹特克神话</div>  
-            <div class="term">阿拉伯神话</div>  
-        </div>  
-        <div class="red-border">  
-            <div class="term"><a href="#">《北欧众神》相关</a></div>  
-            <div class="term">巨人族</div>  
-            <div class="term">阿萨神族</div>  
-            <div class="term">矮人族</div>  
-            <div class="term">精灵族</div>
-            <div class="term">神兽</div>
-            <div class="term">神器</div>
-            <div class="term">地域</div>
-        </div>
-</body>
-</html>
+<div class="green-vine-border">  
+  <h1>当代美国流传的神话及传说</h1>  
+  <h2>△走进奇幻美国△</h2>  
+  <h2 class="sub-titles">  
+    <a href="#">《美国众神》相关</a>  
+    <a href="#">《北欧众神》相关</a>  
+    <a href="#">美国本土神话</a>  
+    <a href="#">美国外来神话</a>  
+    <a href="#">近现代政治神话</a>  
+    <a href="#">热门IP相关</a>  
+  </h2>  
+  <div class="search-box">  
+    <input type="text" value="请输入关键词，为您检索对应的神话传说原典" readonly style="background-color: #00008B;">  
+  </div>  
+  <p class="example-text">示例：输入“影子”并回车，可得到：</p>  
+  <p>真实身份为巴德尔(Baldr)，是北欧神话中的光明之神，也是春天与喜悦之神，被视为光的拟人化。他的父亲是阿萨神族的神王奥丁(Odin，即星期三)，母亲是神后弗丽嘉(Frigg)，他和黑暗之神霍德尔(Hoder)是孪生兄弟。巴德尔英俊、天真、愉快，他的金色头发和白皙的脸庞像是永远在放射光芒。万物皆热爱他，而他也热爱万物。他因洛基的阴谋诡计和槲寄生死去。</p>  
+  <ul class="term-list">  
+    <li><a href="#">《美国众神》相关</a></li>  
+    <li>北欧神话</li>  
+    <li>印度神话</li>  
+    <li>希腊神话</li>  
+    <li>罗马神话</li>  
+    <li>爱尔兰传说</li>  
+    <li>阿兹特克神话</li>  
+    <li>阿拉伯神话</li>  
+  </ul>  
+  <ul class="term-list">  
+    <li><a href="#">《北欧众神》相关</a></li>  
+    <li>巨人族</li>  
+    <li>阿
