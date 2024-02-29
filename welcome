@@ -1,97 +1,36 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-<meta charset="UTF-8">  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  
-<title>当代美国流传的神话及传说检索</title>  
-<style>  
-  body {  
-    font-family: Arial, sans-serif;  
-    margin: 0;  
-    padding: 20px;  
-  }  
-  
-  h1 {  
-    text-align: center;  
-  }  
-  
-  .content {  
-    max-width: 800px;  
-    margin: 0 auto;  
-  }  
-  
-  .section {  
-    margin-bottom: 30px;  
-  }  
-  
-  .section h2 {  
-    font-size: 18px;  
-  }  
-  
-  .section ul {  
-    list-style-type: none;  
-    padding: 0;  
-  }  
-  
-  .section li {  
-    margin-bottom: 5px;  
-  }  
-  
-  .search-box {  
-    text-align: center;  
-    margin-bottom: 30px;  
-  }  
-  
-  .search-box input[type="text"] {  
-    padding: 5px;  
-    width: 200px;  
-  }  
-</style>  
-</head>  
-<body>  
-  
-<div class="content">  
-  <h1>当代美国流传的神话及传说检索</h1>  
-  
-  <div class="search-box">  
-    <input type="text" placeholder="请输入关键词进行检索">  
-    <button type="submit">搜索</button>  
-  </div>  
-  
-  <div class="section">  
-    <h2>《美国众神》相关</h2>  
-    <ul>  
-      <li>北欧神话</li>  
-      <li>印度神话</li>  
-      <li>希腊神话</li>  
-      <li>罗马神话</li>  
-      <li>爱尔兰传说</li>  
-      <li>阿兹特克神话</li>  
-      <li>阿拉伯神话</li>  
-    </ul>  
-  </div>  
-  
-  <div class="section">  
-    <h2>《北欧众神》相关</h2>   
-  </div>  
-  
-  <div class="section">  
-    <h2>美国本土神话</h2>  
-  </div>  
-  
-  <div class="section">  
-    <h2>美国外来神话</h2>  
-  </div>  
-  
-  <div class="section">  
-    <h2>近现代政治神话</h2>  
-  </div>  
-  
-  <div class="section">  
-    <h2>热门IP相关</h2>   
-  </div>  
-  
-</div>  
-  
-</body>  
-</html>
+<ul>
+    <li><a href="https://mzh.moegirl.org.cn/%E7%BE%8E%E5%9B%BD%E4%BC%97%E7%A5%9E">《美国众神》相关</a></li>
+    <li><a href="https://www.zhihu.com/question/28505299/answer/41286190">《北欧众神》相关</a></li>
+    <li><a href="#localmyths">本土神话传说</a></li>
+    <li><a href="#foreignmyths">外来神话传说</a></li>
+    <li><a href="#modernmyths">近现代政治神话</a></li>
+    <li><a href="#popularIP">热门IP相关</a></li>
+</ul>
+
+<div id="usgods">
+    <h2>《美国众神》相关</h2>
+    <input type="text" value="请输入关键词，为您检索符合要求的神话传说">
+    <ul>
+        <li>北欧神话</li>
+        <li>印度神话</li>
+        <li><a href="https://baijiahao.baidu.com/s?id=1669109065843889450">希腊神话</a></li>
+        <li>罗马神话</li>
+        <li>爱尔兰传说</li>
+        <li>阿兹特克神话</li>
+        <li>阿拉伯神话</li>
+    </ul>
+</div>
+
+<div id="norsegods">
+    <h2>《北欧众神》相关</h2>
+    <input type="text" value="请输入关键词，为您检索符合要求的神话传说">
+    <ul>
+        <li>巨人族</li>
+        <li>阿萨神族</li>
+        <li>矮人族</li>
+        <li>精灵族</li>
+        <li>神兽</li>
+        <li>地域</li>
+        <li>神器</li>
+    </ul>
+</div>
