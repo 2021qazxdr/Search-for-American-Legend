@@ -8,16 +8,17 @@
   body {  
     margin: 0;  
     padding: 0;  
-    font-family: Arial, sans-serif;  
     background-color: #00008B; /* Blue background */  
     color: #FFFFFF; /* White text */  
     text-align: center;  
+    font-family: Arial, sans-serif;  
   }  
   
-  .green-vine-border {  
-    border: 5px solid green;  
+  .vine-border {  
+    border: 10px solid green;  
     padding: 20px;  
-    margin: 20px;  
+    margin: 20px auto;  
+    max-width: 960px;  
   }  
   
   h1, h2, p {  
@@ -28,9 +29,14 @@
     font-size: 36px;  
   }  
   
-  h2 {  
+  .sub-titles {  
+    display: flex;  
+    justify-content: space-around;  
+    margin-bottom: 20px;  
+  }  
+  
+  .sub-titles h2 {  
     font-size: 24px;  
-    margin-bottom: 10px;  
   }  
   
   .search-box {  
@@ -42,11 +48,12 @@
   }  
   
   .term-list {  
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: wrap;  
     list-style-type: none;  
     padding: 0;  
-    display: flex;  
-    flex-wrap: wrap;  
-    justify-content: space-around;  
+    margin: 0;  
   }  
   
   .term-list li {  
@@ -58,10 +65,6 @@
     text-decoration: none;  
   }  
   
-  .example-text {  
-    margin-bottom: 20px;  
-  }  
-  
   @media screen and (max-width: 600px) {  
     .term-list {  
       flex-direction: column;  
@@ -70,22 +73,20 @@
 </style>  
 </head>  
 <body>  
-<div class="green-vine-border">  
+<div class="vine-border">  
   <h1>当代美国流传的神话及传说</h1>  
   <h2>△走进奇幻美国△</h2>  
-  <h2 class="sub-titles">  
-    <a href="#">《美国众神》相关</a>  
-    <a href="#">《北欧众神》相关</a>  
-    <a href="#">美国本土神话</a>  
-    <a href="#">美国外来神话</a>  
-    <a href="#">近现代政治神话</a>  
-    <a href="#">热门IP相关</a>  
-  </h2>  
+  <div class="sub-titles">  
+    <h2><a href="#">《美国众神》相关</a></h2>  
+    <h2><a href="#">《北欧众神》相关</a></h2>  
+    <h2><a href="#">美国本土神话</a></h2>  
+    <h2><a href="#">美国外来神话</a></h2>  
+    <h2><a href="#">近现代政治神话</a></h2>  
+    <h2><a href="#">热门IP相关</a></h2>  
+  </div>  
   <div class="search-box">  
     <input type="text" value="请输入关键词，为您检索对应的神话传说原典" readonly style="background-color: #00008B;">  
   </div>  
-  <p class="example-text">示例：输入“影子”并回车，可得到：</p>  
-  <p>真实身份为巴德尔(Baldr)，是北欧神话中的光明之神，也是春天与喜悦之神，被视为光的拟人化。他的父亲是阿萨神族的神王奥丁(Odin，即星期三)，母亲是神后弗丽嘉(Frigg)，他和黑暗之神霍德尔(Hoder)是孪生兄弟。巴德尔英俊、天真、愉快，他的金色头发和白皙的脸庞像是永远在放射光芒。万物皆热爱他，而他也热爱万物。他因洛基的阴谋诡计和槲寄生死去。</p>  
   <ul class="term-list">  
     <li><a href="#">《美国众神》相关</a></li>  
     <li>北欧神话</li>  
@@ -99,13 +100,13 @@
   <ul class="term-list">  
     <li><a href="#">《北欧众神》相关</a></li>  
     <li>巨人族</li>  
-    <li>阿萨神族</li>
-    <li>矮人族</li>
-    <li>精灵族</li>
-    <li>神兽</li>
-    <li>地域</li>
-    <li>神器</li>
-  </ul>
-  </div>
-</body>
+    <li>阿萨神族</li>  
+    <li>矮人族</li>  
+    <li>精灵族</li>  
+    <li>神兽</li>  
+    <li>地域</li>  
+    <li>神器</li>  
+  </ul>  
+</div>  
+</body>  
 </html>
