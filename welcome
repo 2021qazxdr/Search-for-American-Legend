@@ -1,50 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美国神话及传说</title>
-</head>
-<body>
-    <h1>△走进奇幻美国△</h1>
-    
-    <ul>
-        <li><a href="#usgods">《美国众神》相关</a></li>
-        <li><a href="#norsegods">《北欧众神》相关</a></li>
-        <li><a href="#localmyths">本土神话传说</a></li>
-        <li><a href="#foreignmyths">外来神话传说</a></li>
-        <li><a href="#modernmyths">近现代政治神话</a></li>
-        <li><a href="#popularIP">热门IP相关</a></li>
-    </ul>
-
-    <div id="usgods">
-        <h2>《美国众神》相关</h2>
-        <input type="text" value="请输入关键词，为您检索符合要求的神话传说">
-        <ul>
-            <li>北欧神话</li>
-            <li>印度神话</li>
-            <li>希腊神话</li>
-            <li>罗马神话</li>
-            <li>爱尔兰传说</li>
-            <li>阿兹特克神话</li>
-            <li>阿拉伯神话</li>
-        </ul>
-    </div>
-
-    <div id="norsegods">
-        <h2>《北欧众神》相关</h2>
-        <input type="text" value="请输入关键词，为您检索符合要求的神话传说">
-        <ul>
-            <li>巨人族</li>
-            <li>阿萨神族</li>
-            <li>矮人族</li>
-            <li>精灵族</li>
-            <li>神兽</li>
-            <li>地域</li>
-            <li>神器</li>
-        </ul>
-    </div>
-
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>当代美国流传的神话及传说</title>  
+    <style>  
+        body {  
+            margin: 0;  
+            padding: 0;  
+            font-family: Arial, sans-serif;  
+        }  
+  
+        .green-border {  
+            border: 5px solid green;  
+            padding: 20px;  
+        }  
+  
+        .big-title {  
+            text-align: center;  
+            color: blue;  
+            font-size: 24px;  
+            margin-bottom: 20px;  
+        }  
+  
+        .small-title {  
+            display: inline-block;  
+            padding: 10px 20px;  
+            background-color: blue;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 18px;  
+            border-radius: 10px;  
+            margin-right: 10px;  
+            text-decoration: none;  
+        }  
+  
+        .search-page {  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+        }  
+  
+        .search-box {  
+            width: 300px;  
+            padding: 10px;  
+        }  
+  
+        .result {  
+            border: 2px solid red;  
+            padding: 10px;  
+            margin-top: 10px;  
+        }  
+  
+        .red-border {  
+            border: 2px solid red;  
+            padding: 10px;  
+            margin-top: 20px;  
+        }  
+  
+        .term {  
+            display: inline-block;  
+            width: 150px;  
+            margin-right: 10px;  
+            font-weight: bold;  
+            white-space: nowrap;  
+        }  
+  
+        .term:before {  
+            content: "• ";  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="green-border">  
+        <h1 class="big-title">△走进奇幻美国△</h1>  
+        <div>  
+            <a href="#" class="small-title" onclick="openPage('american_gods')">《美国众神》相关</a>  
+            <a href="#" class="small-title" onclick="openPage('nordic_gods')">《北欧众神》相关</a>  
+            <a href="#" class="small-title" onclick="openPage('native_myths')">美国本土神话</a>  
+            <a href="#" class="small-title" onclick="openPage('foreign_myths')">美国外来神话</a>  
+            <a href="#" class="small-title" onclick="openPage('political_myths')">近现代政治神话</a>  
+            <a href="#" class="small-title" onclick="openPage('popular_ip')">热门IP相关</a>  
+        </div>  
+        <div class="red-border">  
+            <div class="term"><a href="#">《美国众神》相关</a></div>  
+            <div class="term">北欧神话</div>  
+            <div class="term">印度神话</div>  
+            <div class="term">希腊神话</div>  
+            <div class="term">罗马神话</div>  
+            <div class="term">爱尔兰传说</div>  
+            <div class="term">阿兹特克神话</div>  
+            <div class="term">阿拉伯神话</div>  
+        </div>  
+        <div class="red-border">  
+            <div class="term"><a href="#">《北欧众神》相关</a></div>  
+            <div class="term">巨人族</div>  
+            <div class="term">阿萨神族</div>  
+            <div class="term">矮人族</div>  
+            <div class="term">精灵族</div>
+            <div class="term">神兽</div>
+            <div class="term">神器</div>
+            <div class="term">地域</div>
+        </div>
 </body>
 </html>
