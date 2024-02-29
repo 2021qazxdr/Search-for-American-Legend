@@ -3,110 +3,95 @@
 <head>  
 <meta charset="UTF-8">  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-<title>当代美国流传的神话及传说</title>  
+<title>当代美国流传的神话及传说检索</title>  
 <style>  
   body {  
-    margin: 0;  
-    padding: 0;  
-    background-color: #00008B; /* Blue background */  
-    color: #FFFFFF; /* White text */  
-    text-align: center;  
     font-family: Arial, sans-serif;  
-  }  
-  
-  .vine-border {  
-    border: 10px solid green;  
-    padding: 20px;  
-    margin: 20px auto;  
-    max-width: 960px;  
-  }  
-  
-  h1, h2, p {  
     margin: 0;  
+    padding: 20px;  
   }  
   
   h1 {  
-    font-size: 36px;  
+    text-align: center;  
   }  
   
-  .sub-titles {  
-    display: flex;  
-    justify-content: space-around;  
-    margin-bottom: 20px;  
+  .content {  
+    max-width: 800px;  
+    margin: 0 auto;  
   }  
   
-  .sub-titles h2 {  
-    font-size: 24px;  
+  .section {  
+    margin-bottom: 30px;  
+  }  
+  
+  .section h2 {  
+    font-size: 18px;  
+  }  
+  
+  .section ul {  
+    list-style-type: none;  
+    padding: 0;  
+  }  
+  
+  .section li {  
+    margin-bottom: 5px;  
   }  
   
   .search-box {  
-    margin: 20px 0;  
-    padding: 10px;  
-    border: 1px solid #666;  
-    border-radius: 5px;  
-    width: 50%;  
+    text-align: center;  
+    margin-bottom: 30px;  
   }  
   
-  .term-list {  
-    display: flex;  
-    justify-content: space-between;  
-    flex-wrap: wrap;  
-    list-style-type: none;  
-    padding: 0;  
-    margin: 0;  
-  }  
-  
-  .term-list li {  
-    margin: 10px 0;  
-  }  
-  
-  .term-list a {  
-    color: #FFFFFF;  
-    text-decoration: none;  
-  }  
-  
-  @media screen and (max-width: 600px) {  
-    .term-list {  
-      flex-direction: column;  
-    }  
+  .search-box input[type="text"] {  
+    padding: 5px;  
+    width: 200px;  
   }  
 </style>  
 </head>  
 <body>  
-<div class="vine-border">  
-  <h1>当代美国流传的神话及传说</h1>  
-  <h2>△走进奇幻美国△</h2>  
-  <div class="sub-titles">  
-    <h2><a href="#">《美国众神》相关</a></h2>  
-    <h2><a href="#">《北欧众神》相关</a></h2>  
-    <h2><a href="#">美国本土神话</a></h2>  
-    <h2><a href="#">美国外来神话</a></h2>  
-    <h2><a href="#">近现代政治神话</a></h2>  
-    <h2><a href="#">热门IP相关</a></h2>  
-  </div>  
+  
+<div class="content">  
+  <h1>当代美国流传的神话及传说检索</h1>  
+  
   <div class="search-box">  
-    <input type="text" value="请输入关键词，为您检索对应的神话传说原典" readonly style="background-color: #00008B;">  
+    <input type="text" placeholder="请输入关键词进行检索">  
+    <button type="submit">搜索</button>  
   </div>  
-  <ul class="term-list">  
-    <li><a href="#">《美国众神》相关</a></li>  
-    <li>北欧神话</li>  
-    <li>印度神话</li>  
-    <li>希腊神话</li>  
-    <li>罗马神话</li>  
-    <li>爱尔兰传说</li>  
-    <li>阿兹特克神话</li>  
-    <li>阿拉伯神话</li>  
-  </ul>  
-  <ul class="term-list">  
-    <li><a href="#">《北欧众神》相关</a></li>  
-    <li>巨人族</li>  
-    <li>阿萨神族</li>  
-    <li>矮人族</li>  
-    <li>精灵族</li>  
-    <li>神兽</li>  
-    <li>地域</li>  
-    <li>神器</li>  
-  </ul>  
+  
+  <div class="section">  
+    <h2>《美国众神》相关</h2>  
+    <ul>  
+      <li>北欧神话</li>  
+      <li>印度神话</li>  
+      <li>希腊神话</li>  
+      <li>罗马神话</li>  
+      <li>爱尔兰传说</li>  
+      <li>阿兹特克神话</li>  
+      <li>阿拉伯神话</li>  
+    </ul>  
+  </div>  
+  
+  <div class="section">  
+    <h2>《北欧众神》相关</h2>   
+  </div>  
+  
+  <div class="section">  
+    <h2>美国本土神话</h2>  
+  </div>  
+  
+  <div class="section">  
+    <h2>美国外来神话</h2>  
+  </div>  
+  
+  <div class="section">  
+    <h2>近现代政治神话</h2>  
+  </div>  
+  
+  <div class="section">  
+    <h2>热门IP相关</h2>   
+  </div>  
+  
 </div>  
+  
 </body>  
 </html>
