@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>当代美国流传的神话及传说</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            background-color: #fff;
-            border: 5px solid #4CAF50;
-            padding: 20px;
-            border-radius: 20px;
-            margin-top: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: blue;
-        }
-        .subtitles {
-            display: flex;
-            justify-content: space-between;
-        }
-        .subtitle-box {
-            background-color: blue;
-            border-radius: 10px;
-            padding: 5px 10px;
-            color: white;
-            font-weight: bold;
-        }
-        .search-box {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .search-input {
-            width: 300px;
-            padding: 5px;
-        }
-        .result {
-            border: 2px solid red;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .terms {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .term-box {
-            background-color: red;
-            border-radius: 10px;
-            padding: 5px 10px;
-            color: white;
-            font-weight: bold;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国神话及传说</title>
 </head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        border: 5px solid #4CAF50;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 20px;
+        }
+    h1 {
+        text-align: center;
+        color: blue;
+        }
+    .subtitles {
+        display: flex;
+        justify-content: space-between;
+        }
+    .subtitle-box {
+        background-color: blue;
+        border-radius: 10px;
+        padding: 5px 10px;
+        color: white;
+        font-weight: bold;
+        }
+    .search-box {
+        text-align: center;
+        margin-top: 20px;
+        }
+    .search-input {
+        width: 300px;
+        padding: 5px;
+        }
+    .result {
+        border: 2px solid red;
+        padding: 10px;
+        margin-top: 20px;
+        }
+    .terms {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        }
+    .term-box {
+        background-color: red;
+        border-radius: 10px;
+        padding: 5px 10px;
+        color: white;
+        font-weight: bold;
+        }
+</style>
+
 <body>
     <div class="container">
         <h1>△走进奇幻美国△</h1>
+
         <div class="subtitles">
             <div class="subtitle-box" onclick="location.href='search_page.html'">《美国众神》相关</div>
             <div class="subtitle-box" onclick="location.href='search_page.html'">《北欧众神》相关</div>
@@ -73,6 +76,7 @@
             <div class="subtitle-box" onclick="location.href='search_page.html'">近现代政治神话</div>
             <div class="subtitle-box" onclick="location.href='search_page.html'">热门IP相关</div>
         </div>
+
         <div class="search-box">
             <input type="text" class="search-input" placeholder="请输入关键词，为您检索对应的神话传说原典">
         </div>
@@ -102,5 +106,6 @@
                     <li>地域</li>
                 </ul>
             </div>
+
 </body>
 </html>
